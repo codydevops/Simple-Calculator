@@ -82,5 +82,7 @@ header{
 @media (max-width: 768px){ 
     .container{
         margin: 20px;
+        width: auto;
+        background-color: #42b983;
     }
 }
