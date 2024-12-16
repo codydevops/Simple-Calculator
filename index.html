@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodyDEv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/calculator.png">
+</head>
+<body>
+    <header>
+        <p>Calculator</p>
+    </header>
+    <div class="container">
+        <form>
+            <label for="numero01">Numero 01</label>
+            <input class="input-number" type="number" name="numero01" id="numero01" step="any" required> <br/>
+            <label for="numero02">Numero 02</label>
+            <input class="input-number" type="number" name="numero02" id="numero02" step="any" required> <br/> <br/> 
+            <div class="operacion">
+                <label class="operacion" for="operacion">Operacion</label>
+                <select class="input-select" name="operacion" id="operacion">
+                    <option value="seleccionar" disabled selected>--Selecciona--</option>
+                    <option value="suma">Sumar</option>
+                    <option value="resta">Restar</option>
+                    <option value="multiplicacion">Multiplicar</option>
+                    <option value="division">Dividir</option>
+                </select>
+            </div>
+            <br/> <br/> 
+            <div class="botones">
+                <input class="btn-enviar" type="submit" value="Calcular">
+                <input class="btn-eliminar" type="reset" value="Limpiar"> <br/>
+            </div> <br/> <br/> 
+            <label for="resultado">Resultado</label>
+            <input class="resultado" type="text" name="resultado" id="resultado" disabled>
+        </form>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
